@@ -1,0 +1,10 @@
+version: '2.15'
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: apache-web-app
+    ports:
+    - '80:80'
+    volumes:
+    - C:\htdocs:/usr/local/apache2/htdocs
