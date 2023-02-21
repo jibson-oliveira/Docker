@@ -12,7 +12,7 @@ Mas podemos resumir Docker como uma tecnologia de conteinerização para criaç�
 Para a criação desse container, iremos utilizar o Docker Compose, que é uma ferramenta desenvolvida para ajudar a definir e compartilhar aplicativos com vários contêineres. Com o Compose, você pode criar um arquivo YAML para definir os serviços e com um unico comando, pode rodar todos os conteineres ou para-los.
 Em máquinas Linux, por padrão o Compose não é instalado junto com o Docker, sendo necessária a instalação do seu pacote. No caso de máquinas Windows ele é instalado junto ao Docker Desktop.
 
-###### Volumes
+#### Volumes
 Antes de iniciar a criação do ambiente, devemos lembrar que os dados que forem armazenados dentro do conteiner serão perdidos no momento em que o mesmo for parado. Para evitar a perda desses dados devemos criar os volumes, que são locais na sua maquina hospedeira que servirão para armazenar e transferir arquivos para o seu conteiner.
 Para a nossa aplicação, eu criei uma pasta chamada htdocs no disco C: e dentro dela eu criei um arquivo em HTML simples apenas para a demonstração.
 
@@ -20,7 +20,7 @@ Para a nossa aplicação, eu criei uma pasta chamada htdocs no disco C: e dentro
 
 ![Conteudo arquivo index.html](/container-app-web/images/index.JPG)
 
-###### Arquivo YML
+#### Arquivo YML
 Iremos agora criar um arquivo chamado **compose.yml**. Esse arquivo terá a estrutura demonstrada na imagem abaixo.
 
 ![Estrutura do arquivo compose](/container-app-web/images/compose.JPG)
